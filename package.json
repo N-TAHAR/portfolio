@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/N-TAHAR/portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/N-TAHAR/portfolio/issues"
+  },
+  "homepage": "https://github.com/N-TAHAR/portfolio#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.10.3",
+    "sass": "^1.15.1"
+  }
+}
