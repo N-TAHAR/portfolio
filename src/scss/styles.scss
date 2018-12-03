@@ -1,6 +1,19 @@
 @import "reset.scss";
 @import "header.scss";
 
+@mixin size {
+  width: 100vw;
+  height: 100vh;
+}
+
+@mixin position($top: 0, $left: 0, $rotate: 0) {
+  position: absolute;
+  top: $top;
+  left: $left;
+  transform: translate(-50%, -50%) rotate($rotate);
+
+}
+
 *{
   box-sizing: border-box;
 }
@@ -8,3 +21,40 @@
 body{
   font-size: 1.5rem;
 }
+
+.home-page{
+  @include size;
+  background-color: black;
+  position: relative;
+
+  .logo{
+    width: 16em;
+    height: 3em;
+    background-color: white;
+  }
+
+  .N1{
+    @include position(40%, 38%, 90deg);
+  }
+
+  .N2{
+    @include position(40%, 42.9%, 68deg);
+  }
+
+  .N3{
+    @include position(40%, 47.8%, 90deg);
+  }
+
+  .T1{
+    @include position(60%, 55%, 90deg);
+  }
+
+  .T2{
+    width: 11em;
+    @include position(39%, 55.5%);
+
+  }
+
+}
+
+
