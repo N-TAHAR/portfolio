@@ -29,11 +29,11 @@
 }
 
 .logo__initial--T1{
-  @include position(156px, 46px, 90deg);
+  @include position(156px, 50px, 90deg);
 }
 
 .logo__initial--T2{
   width: 120px;
-  @include position(83px, 74px);
+  @include position(83px, 75px);
 }
 
