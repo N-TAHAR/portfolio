@@ -1,0 +1,39 @@
+.homePage{
+  @include size;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homePage__logo{
+  @include size(200px, 300px);
+  position: relative;
+}
+
+.logo__initial{
+  @include size(171px, 26px);
+  background-color: white;
+}
+
+.logo__initial--N1{
+  @include position(65px, -64px, 90deg);
+}
+
+.logo__initial--N2{
+  @include position(65px, -31px, 68deg);
+}
+
+.logo__initial--N3{
+  @include position(65px, 2px, 90deg);
+}
+
+.logo__initial--T1{
+  @include position(156px, 46px, 90deg);
+}
+
+.logo__initial--T2{
+  width: 120px;
+  @include position(83px, 74px);
+}
+
