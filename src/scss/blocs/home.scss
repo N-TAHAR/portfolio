@@ -2,6 +2,7 @@
   @include size;
   background-color: black;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -35,5 +36,10 @@
 .logo__initial--T2{
   width: 120px;
   @include position(83px, 75px);
+}
+
+.homePage__arrow{
+  @include size(37px, 37px);
+  margin-top: 50px;
 }
 
