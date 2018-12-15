@@ -3,10 +3,11 @@
   height: $height;
 }
 
-@mixin position($top: 0, $left: 0, $rotate: 0) {
+@mixin position($top: 0, $left: 0, $translateX: 0, $translateY: 0, $rotate: 0) {
   position: absolute;
   top: $top;
   left: $left;
-  transform: rotate($rotate);
-
+  bottom: auto;
+  right: auto;
+  transform:translate($translateX,$translateY) rotate($rotate);
 }

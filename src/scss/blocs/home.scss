@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .homePage__logo{
@@ -15,31 +16,46 @@
 .logo__initial{
   @include size(171px, 26px);
   background-color: white;
+  transition: transform  1s;
 }
 
 .logo__initial--N1{
-  @include position(65px, -64px, 90deg);
+  @include position(65px, -64px, 0, 300px, 90deg);
 }
 
 .logo__initial--N2{
-  @include position(65px, -31px, 68deg);
+  @include position(65px, -31px, 0, 0, 68deg);
 }
 
 .logo__initial--N3{
-  @include position(65px, 2px, 90deg);
+  @include position(65px, 2px, 0, -300px, 90deg);
 }
 
 .logo__initial--T1{
-  @include position(156px, 50px, 90deg);
+  @include position(156px, 50px, 0, 300px, 90deg);
 }
 
 .logo__initial--T2{
   width: 120px;
-  @include position(83px, 75px);
+  @include position(83px, 76px);
+}
+
+.initial--reset{
+  transform: translate(0,0) rotate(90deg);
 }
 
 .homePage__arrow{
   @include size(37px, 37px);
+  transform: translateY(300px);
   margin-top: 50px;
+  transition: transform 1s;
 }
+
+.arrow--reset{
+  transform: none;
+}
+
+
+
+
 
