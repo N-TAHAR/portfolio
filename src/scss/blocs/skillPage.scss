@@ -1,0 +1,44 @@
+.skillPage{
+  padding: 10px;
+}
+
+.skillPage__skills{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.skills__title{
+  @include font(1.5em, bold);
+  margin-bottom: 50px;
+}
+
+.skills__container{
+  margin: 10px;
+}
+
+.skills__skill{
+  @include font;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skills__skill:not(:last-child){
+  margin-bottom: 20px;
+}
+
+.skill__level{
+  @include size(120px, 15px);
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+.skill__level--html::before{
+  content:'';
+  display: block;
+  @include size(40px, 100%);
+  border-radius: 10px 0 0 10px;
+  background-color: black;
+}
+
