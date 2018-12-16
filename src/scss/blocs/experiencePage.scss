@@ -1,0 +1,33 @@
+.experiencePage{
+  @include size;
+  padding: 10px;
+}
+
+.experiencePage__title{
+  @include font(1.5em, bold);
+}
+
+.experiencePage__experiences{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.experiences__experience{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.info__title{
+  @include font(1.2em, bold);
+  margin-bottom: 10px;
+}
+
+.info__skills{
+  @include font(0.8em, lighter);
+}
+
+
+

@@ -10,6 +10,10 @@
   <script defer src="js/noframework.waypoints.min.js"></script>
   <script defer src="js/logo-appear.js"></script>
   <script defer src="js/skill.js"></script>
+  <script defer type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script defer type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script defer type="text/javascript" src="js/slick.min.js"></script>
+  <script defer type="text/javascript" src="js/experience.js"></script>
 </head>
 <body>
 
@@ -19,25 +23,70 @@
 
   <main>
     <section class="homePage">
-      <div class="homePage__logo logo">
-        <div class="logo__initial logo__initial--N1"></div>
+      <div class="homePage__logo logo"> <!-- Logo -->
+        <div class="logo__initial logo__initial--N1"></div> <!-- A part of logo-->
         <div class="logo__initial logo__initial--N2"></div>
         <div class="logo__initial logo__initial--N3"></div>
         <div class="logo__initial logo__initial--T1"></div>
         <div class="logo__initial logo__initial--T2"></div>
       </div>
-      <img class="homePage__arrow" src="img/down-arrow.svg" alt="down arrow">
+      <img class="homePage__arrow" src="img/down-arrow.svg" alt="down arrow"> <!-- Arrow -->
     </section>
     <section class="skillPage">
       <div class="skillPage__skills skills">
-        <h2 class="skills__title">Skills</h2>
-        <div class="skills__container">
-          <div class="skills__skill skill"><h3 class="skill__name">HTML5</h3><div class="skill__level skill__level--html"></div></div>
-          <div class="skills__skill skill"><h3 class="skill__name">CSS3</h3><div class="skill__level skill__level--css"></div></div>
-          <div class="skills__skill skill"><h3 class="skill__name">JS</h3><div class="skill__level skill__level--js"></div></div>
-          <div class="skills__skill skill"><h3 class="skill__name">Photoshop</h3><div class="skill__level skill__level--photoshop"></div></div>
-          <div class="skills__skill skill"><h3 class="skill__name">Illustrator</h3><div class="skill__level skill__level--illustrator"></div></div>
-          <div class="skills__skill skill"><h3 class="skill__name">Git</h3><div class="skill__level skill__level--git"></div></div>
+        <h2 class="skills__title">Skills</h2> <!-- Title -->
+         <div class="skills__container">  <!-- Skills Container -->
+          <div class="skills__skill skill"> 
+            <h3 class="skill__name">HTML5</h3>  <!-- Skill Name -->
+            <div class="skill__level skill__level--html"></div> <!-- Level bar -->
+          </div>
+          <div class="skills__skill skill">
+            <h3 class="skill__name">CSS3</h3>
+            <div class="skill__level skill__level--css"></div>
+          </div>
+          <div class="skills__skill skill">
+            <h3 class="skill__name">JS</h3>
+            <div class="skill__level skill__level--js"></div>
+          </div>
+          <div class="skills__skill skill">
+            <h3 class="skill__name">Photoshop</h3>
+            <div class="skill__level skill__level--photoshop"></div>
+          </div>
+          <div class="skills__skill skill">
+            <h3 class="skill__name">Illustrator</h3>
+            <div class="skill__level skill__level--illustrator"></div>
+          </div>
+          <div class="skills__skill skill">
+            <h3 class="skill__name">Git</h3>
+            <div class="skill__level skill__level--git"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="experiencePage">
+        <h2 class="experiencePage__title">Experiences</h2>
+        <div class="experiencePage__experiences experiences">
+          <div class="experiences__experience experience">
+            <img src="img/test.svg" class="experience__image" alt="test">
+            <div class="experience_info info">
+              <h3 class="info__title">Projet1</h3>
+              <h4 class="info__skills">HTML5, CSS3, JS</h4>
+            </div>
+          </div>
+          <div class="experiences__experience experience">
+              <img src="img/test.svg" class="experience__image" alt="test">
+              <div class="experience_info info">
+                <h3 class="info__title">Projet1</h3>
+                <h4 class="info__skills">HTML5, CSS3, JS</h4>
+              </div>
+          </div>
+          <div class="experiences__experience experience">
+              <img src="img/test.svg" class="experience__image" alt="test">
+              <div class="experience_info info">
+                <h3 class="info__title">Projet1</h3>
+                <h4 class="info__skills">HTML5, CSS3, JS</h4>
+              </div>
+          </div>
         </div>
       </div>
     </section>
