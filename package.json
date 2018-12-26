@@ -18,8 +18,8 @@
   },
   "homepage": "https://github.com/N-TAHAR/portfolio#readme",
   "devDependencies": {
-    "parcel-bundler": "^1.10.3",
-    "sass": "^1.15.1"
+    "parcel-bundler": "^1.11.0",
+    "sass": "^1.15.2"
   },
   "dependencies": {
     "jquery": "^3.3.1",
