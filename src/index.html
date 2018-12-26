@@ -7,20 +7,13 @@
   <meta name="description" content="Portfolio de Najib Tahar, développeur front-end, intégrateur HTML, CSS, Javascript"> 
   <title>Najib Tahar | Portfolio</title>
   <link rel="stylesheet" href="scss/styles.scss">
-  <script defer src="js/noframework.waypoints.min.js"></script>
-  <script defer src="js/logo-appear.js"></script>
-  <script defer src="js/skill.js"></script>
-  <script defer type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script defer type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script defer type="text/javascript" src="js/slick.min.js"></script>
-  <script defer type="text/javascript" src="js/experience.js"></script>
+  <link rel="stylesheet" href="OwlCarousel/src/scss/owl.carousel.scss">
+  <link rel="stylesheet" href="OwlCarousel/src/scss/owl.theme.default.scss">
 </head>
 <body>
-
   <header class="header">
     
   </header>
-
   <main>
     <section class="homePage">
       <div class="homePage__logo logo"> <!-- Logo -->
@@ -65,22 +58,22 @@
     </section>
     <section class="experiencePage">
         <h2 class="experiencePage__title">Experiences</h2>
-        <div class="experiencePage__experiences experiences">
-          <div class="experiences__experience experience">
+        <div class="experiencePage__experiences experiences owl-carousel owl-theme">
+          <div class="experiences__experience experience item">
             <img src="img/test.svg" class="experience__image" alt="test">
             <div class="experience_info info">
               <h3 class="info__title">Projet1</h3>
               <h4 class="info__skills">HTML5, CSS3, JS</h4>
             </div>
           </div>
-          <div class="experiences__experience experience">
+          <div class="experiences__experience experience item">
               <img src="img/test.svg" class="experience__image" alt="test">
               <div class="experience_info info">
                 <h3 class="info__title">Projet1</h3>
                 <h4 class="info__skills">HTML5, CSS3, JS</h4>
               </div>
           </div>
-          <div class="experiences__experience experience">
+          <div class="experiences__experience experience item">
               <img src="img/test.svg" class="experience__image" alt="test">
               <div class="experience_info info">
                 <h3 class="info__title">Projet1</h3>
@@ -92,5 +85,11 @@
     </section>
   </main>
 
+  <script src="js/noframework.waypoints.min.js"></script>
+  <script src="js/logo-appear.js"></script>
+  <script src="js/skill.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="OwlCarousel/dist/owl.carousel.min.js"></script>
+  <script src="js/carousel.js"></script>
 </body>
 </html>

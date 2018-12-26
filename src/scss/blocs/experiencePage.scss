@@ -5,19 +5,23 @@
 
 .experiencePage__title{
   @include font(1.5em, bold);
+  margin-bottom: 50px;
 }
 
 .experiencePage__experiences{
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  text-align: center;
+  margin: 0 auto;
+  touch-action: manipulation;
 }
 
 .experiences__experience{
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+.experiences__experience > *{
+  margin-bottom: 40px;
 }
 
 .info__title{
