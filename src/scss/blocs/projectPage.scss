@@ -1,27 +1,33 @@
-.experiencePage{
+.projectPage{
   @include size;
   padding: 10px;
 }
 
-.experiencePage__title{
+.projectPage__title{
   @include font(1.5em, bold);
   margin-bottom: 50px;
 }
 
-.experiencePage__experiences{
+.projectPage__projects{
   margin: 0 auto;
   touch-action: manipulation;
 }
 
-.experiences__experience{
+.projects__project{
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
-.experiences__experience > *{
+.projects__project > *{
   margin-bottom: 40px;
+}
+
+.project__image{
+  width: 250px;
+  height: 250px;
+  @include font(1.2em, bold);
 }
 
 .info__title{
