@@ -1,0 +1,40 @@
+.contactPage{
+  @include size(100vw, 100%);
+  padding: 10px;
+  background-color: black;
+  background: url("../img/wave.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.contactPage__title{
+  @include font(1.5em, bold);
+  margin-bottom: 50px;
+}
+
+.contactPage__contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  overflow-wrap: break-word;
+}
+
+
+.contactPage__contact h3{
+  @include font(0.8em, lighter);
+  color: white;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.contactPage__contact h4{
+  @include font(1.2em, bold);
+  color: white;
+  margin: 10px;
+}
+
+.contactPage__contact h4:nth-of-type(1){
+  margin-bottom: 10px;
+}
