@@ -10,8 +10,7 @@ for (let i = 0; i < initial.length; i++) {
   }, time);
 }
 
-
-//Arrow appear
+// Logo End & Arrow appear
 time+= 1500;
 setTimeout(function() {
   initial[1].classList.remove('initial--reset');

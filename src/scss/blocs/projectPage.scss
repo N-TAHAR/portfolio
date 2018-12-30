@@ -1,6 +1,15 @@
 .projectPage{
-  @include size;
+  @include size(100vw, 100%);
   padding: 10px;
+  margin-bottom: 50px;
+  transform: translateY(300px);
+  opacity: 0;
+  transition: 1s;
+}
+
+.projectReset{
+  transform: none;
+  opacity: 1;
 }
 
 .projectPage__title{

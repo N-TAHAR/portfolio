@@ -1,6 +1,9 @@
 var skillTitle = document.querySelector('.skills__title');
 var skillName = document.querySelectorAll('.skill__name');
 var skillLevel = document.querySelectorAll('.skill__level');
+var projectPage = document.querySelector('.projectPage');
+var contactPage = document.querySelector('.contactPage');
+
 
 //Using Waypoint to appear the elements on scroll
 
@@ -24,7 +27,6 @@ for (let i = 0; i < skillName.length; i++) {
   });
 }
 
-
 //Skill Level appear
 for (let i = 0; i < skillLevel.length; i++) {
   var waypoint = new Waypoint({
@@ -35,3 +37,21 @@ for (let i = 0; i < skillLevel.length; i++) {
     offset: 550
   });
 }
+
+//Project Page appear
+var waypoint = new Waypoint({
+  element: projectPage,
+  handler: function() {
+    projectPage.classList.add('projectReset')
+  },
+  offset: 800
+});
+
+//Contact Page appear
+var waypoint = new Waypoint({
+  element: contactPage,
+  handler: function() {
+    contactPage.classList.add('contactReset')
+  },
+  offset: 800
+});

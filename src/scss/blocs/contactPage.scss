@@ -2,11 +2,18 @@
   @include size(100vw, 100%);
   padding: 10px;
   margin: 0;
-  background-color: black;
   background: url("../img/wave.svg");
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
+  transform: translateY(300px);
+  opacity: 0;
+  transition: 1s;
+}
+
+.contactReset{
+  transform: none;
+  opacity: 1;
 }
 
 .contactPage__title{

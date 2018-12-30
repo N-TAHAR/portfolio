@@ -42,6 +42,10 @@
   margin-top: 5px;
   transform: translateX(300px);
   transition: transform 1s;
+
+  @media (min-width: 375px){
+    @include size(180px, 15px);
+  }
 }
 
 .transformReset{
