@@ -1,6 +1,7 @@
 .contactPage{
   @include size(100vw, 100%);
   padding: 10px;
+  margin: 0;
   background-color: black;
   background: url("../img/wave.svg");
   background-repeat: no-repeat;
