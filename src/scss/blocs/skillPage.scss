@@ -11,7 +11,7 @@
 .skills__title{
   @include font(1.5em, bold);
   margin-bottom: 50px;
-  transform: translateX(-300px);
+  transform: translateX(-1000px);
   transition: 1s;
 }
 
@@ -24,6 +24,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 280px;
+  @media(min-width: 375px){
+    width: 335px;
+  }
 }
 
 .skills__skill:not(:last-child){
@@ -31,7 +35,7 @@
 }
 
 .skill__name{
-  transform: translateX(-300px);
+  transform: translateX(-1000px);
   transition: transform 1s;
 }
 
@@ -40,7 +44,7 @@
   border: 2px solid black;
   border-radius: 10px;
   margin-top: 5px;
-  transform: translateX(300px);
+  transform: translateX(1000px);
   transition: transform 1s;
 
   @media (min-width: 375px){

@@ -17,27 +17,46 @@
   @include size(171px, 26px);
   background-color: white;
   transition: transform  1s;
+  @media(min-width: 600px){
+    @include size(300px, 43px);
+  }
 }
 
 .logo__initial--N1{
   @include position(65px, -64px, 0, 1000px, 90deg);
+  @media(min-width: 600px){
+    @include position(65px, -171px, 0, 1000px, 90deg);  
+  }
 }
 
 .logo__initial--N2{
   @include position(65px, -31px, 0, 0, 68deg);
+  @media(min-width: 600px){
+    left: -114px;
+  }
 }
 
 .logo__initial--N3{
   @include position(65px, 2px, 0, -1000px, 90deg);
+  @media(min-width: 600px){
+    @include position(65px, -55px, 0, 1000px, 90deg);  
+  }
 }
 
 .logo__initial--T1{
   @include position(156px, 50px, 0, 1000px, 90deg);
+  @media(min-width: 600px){
+    @include position(212px, 24px, 0, 1000px, 90deg);  
+  }
 }
 
 .logo__initial--T2{
   width: 120px;
   @include position(83px, 76px);
+  @media(min-width: 600px){
+    width: 174px;
+    left: 87px;
+  }
 }
 
 .initial--reset{
@@ -50,13 +69,15 @@
   margin-top: 50px;
   transition: transform 1s;
   cursor: pointer;
+  @media(min-width: 600px){
+    margin-top: 100px;
+    @include size(50px, 50px);  
+  }
 }
 
 .arrow--reset{
   transform: none;
+  @media(min-width: 600px){
+    transform: translateY(100px);
+  }
 }
-
-
-
-
-
