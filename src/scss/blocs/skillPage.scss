@@ -12,6 +12,7 @@
   @include font(1.5em, bold);
   margin-bottom: 50px;
   transform: translateX(-1000px);
+  opacity: 0;
   transition: 1s;
 }
 
@@ -35,8 +36,9 @@
 }
 
 .skill__name{
-  transform: translateX(-1000px);
-  transition: transform 1s;
+  transform: translateX(-500px);
+  opacity: 0;
+  transition: transform 1s, opacity 1s;
 }
 
 .skill__level{
@@ -45,6 +47,7 @@
   border-radius: 10px;
   margin-top: 5px;
   transform: translateX(1000px);
+  opacity: 0;
   transition: transform 1s;
 
   @media (min-width: 375px){
@@ -54,6 +57,7 @@
 
 .transformReset{
   transform: none;
+  opacity: 1;
 }
 
 .skill__level--html::before, .skill__level--css::before{

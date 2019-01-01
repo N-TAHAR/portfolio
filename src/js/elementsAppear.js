@@ -1,6 +1,7 @@
 var skillTitle = document.querySelector('.skills__title');
 var skillName = document.querySelectorAll('.skill__name');
 var skillLevel = document.querySelectorAll('.skill__level');
+var infoPage = document.querySelector('.infoPage');
 var projectPage = document.querySelector('.projectPage');
 var contactPage = document.querySelector('.contactPage');
 
@@ -13,7 +14,7 @@ var waypoint = new Waypoint({
   handler: function() {
     skillTitle.classList.add('transformReset')
   },
-  offset: 550
+  offset: '100%'
 });
 
 //Skill appear
@@ -23,7 +24,7 @@ for (let i = 0; i < skillName.length; i++) {
     handler: function() {
       skillName[i].classList.add('transformReset')
     },
-    offset: 550
+    offset: '100%'
   });
 }
 
@@ -34,9 +35,19 @@ for (let i = 0; i < skillLevel.length; i++) {
     handler: function() {
       skillLevel[i].classList.add('transformReset')
     },
-    offset: 550
+    offset: '100%'
   });
 }
+
+
+//info Page appear
+var waypoint = new Waypoint({
+  element: infoPage,
+  handler: function() {
+    infoPage.classList.add('infoReset')
+  },
+});
+
 
 //Project Page appear
 var waypoint = new Waypoint({
@@ -44,7 +55,7 @@ var waypoint = new Waypoint({
   handler: function() {
     projectPage.classList.add('projectReset')
   },
-  offset: 800
+  offset: '100%'
 });
 
 //Contact Page appear
@@ -53,5 +64,5 @@ var waypoint = new Waypoint({
   handler: function() {
     contactPage.classList.add('contactReset')
   },
-  offset: 800
+  offset: '100%'
 });

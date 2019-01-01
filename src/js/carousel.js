@@ -11,6 +11,9 @@ $(document).ready(function(){
               items:2,
               center: false
           },
+          1000:{
+            items:3,
+          },
       }
     });
   });

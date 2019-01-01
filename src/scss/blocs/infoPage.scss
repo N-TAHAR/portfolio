@@ -1,0 +1,35 @@
+.infoPage{
+  display: none;
+  background-color: black;
+  border-radius: 0 0 0 10px;
+  color: white;
+  transform: translateY(-1000px);
+  transition: 1s;
+  z-index: -1;
+
+  @media(min-width: 600px){
+    display: block;
+    @include size(30vw,430px);
+  }
+
+  @media(min-width: 700px){
+    @include size(40vw,430px);
+  }
+
+  @media(min-width: 790px){
+    @include size(50vw,430px);
+  }
+}
+
+.infoReset{
+  transform: none;
+}
+
+.infoPage__info{
+  @include font;
+  display:flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}

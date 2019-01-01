@@ -6,9 +6,16 @@
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
-  transform: translateY(300px);
+  transform: translateY(100px);
   opacity: 0;
   transition: 1s;
+
+  @media(min-width: 510px){
+  background: url("../img/wave-ipad.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  }
 }
 
 .contactReset{
