@@ -14,8 +14,14 @@
   background: url("../img/wave-ipad.svg");
   background-repeat: no-repeat;
   background-size: cover;
-
   }
+
+  @media(min-width: 1060px){
+    background: url("../img/wave-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    }
 }
 
 .contactReset{
@@ -26,6 +32,10 @@
 .contactPage__title{
   @include font(1.5em, bold);
   margin-bottom: 50px;
+  @media (min-width: 1060px){
+    margin-bottom: 0px;
+    margin-top: 32px;
+  }
 }
 
 .contactPage__contact{
@@ -34,6 +44,11 @@
   justify-content: center;
   height: 400px;
   overflow-wrap: break-word;
+
+  @media (min-width: 1060px){
+    justify-content: flex-end;
+    height: 300px;
+  }
 }
 
 

@@ -39,7 +39,7 @@
 .logo__initial--N3{
   @include position(65px, 2px, 0, -1000px, 90deg);
   @media(min-width: 600px){
-    @include position(65px, -55px, 0, 1000px, 90deg);  
+    @include position(65px, -55px, 0, -1000px, 90deg);  
   }
 }
 

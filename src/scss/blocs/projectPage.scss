@@ -15,6 +15,9 @@
 .projectPage__title{
   @include font(1.5em, bold);
   margin-bottom: 50px;
+  @media (min-width: 1060px){
+    margin-bottom: 70px;
+  }
 }
 
 .projectPage__projects{
@@ -27,6 +30,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  overflow: visible;
+  cursor: pointer;
 }
 
 .projects__project > *{
