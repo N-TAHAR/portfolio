@@ -23,6 +23,10 @@
 .projectPage__projects{
   margin: 0 auto;
   touch-action: manipulation;
+
+  a{
+    color: black;
+  }
 }
 
 .projects__project{
@@ -52,6 +56,3 @@
 .info__skills{
   @include font(0.8em, lighter);
 }
-
-
-

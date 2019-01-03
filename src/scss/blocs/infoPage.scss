@@ -40,4 +40,19 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+
+  @media (min-width: 800px){
+    display: none;
+  }
 }
+
+.infoPage__about{
+  @media (min-width: 800px){
+    @include font;
+    padding: 20px;
+    line-height: 35px;
+    height: 100%;
+  }
+}
+
+

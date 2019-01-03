@@ -64,22 +64,22 @@
 }
 
 .skill__level--html::before, .skill__level--css::before{
-  @include size(80%, 100%);
+  @include size(90%, 100%);
   @include skillLevel;
 }
 
 .skill__level--js::before{
-  @include size(70%, 100%);
+  @include size(75%, 100%);
   @include skillLevel;
 }
 
 .skill__level--photoshop::before, .skill__level--illustrator::before{
-  @include size(50%, 100%);
+  @include size(60%, 100%);
   @include skillLevel;
 }
 
 .skill__level--git::before{
-  @include size(60%, 100%);
+  @include size(65%, 100%);
   @include skillLevel;
 }
 
